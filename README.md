@@ -2,6 +2,23 @@
 
 AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 
+## 팀명: Team DAMIM
+
+- **인원/역할**
+
+Backend: 양예준 (User & Class, front, infra)
+
+Backend: 안동현 (Submission & Grading, Assignment, infra)
+
+AI: 박지민 (LangChain RAG, Feedback, Assignment)
+
+- **데모 링크**
+- 프로덕트 URL:
+- 서비스 배포 URL:
+- 릴리즈 버전/날짜: ver.250822
+
+
+### 
 ## 프로젝트 소개 
 교사와 학생을 대상으로 한 경량 학습 관리 및 AI 보조 시스템입니다.  
 교사는 과제/퀴즈를 등록하고, 학생은 답안을 제출하면 AI가 RAG기반 피드백을 제공합니다.  
@@ -18,7 +35,23 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
   - AI 기반 피드백 및 점수 조회
 - **AI 서비스**
   - LangChain RAG 기반 근거 검색
+## 배포 환경
+React 프론트는 Vercel 분리 배포(auto rebuild 강점)
+백엔드: Azure App Service + ACR + APIM
+이미지 태깅: latest + commit-SHA 병행 (롤백/추적성 확보)
 
+## 프로젝트 특장점
+- APIM: 프록시·CORS 해결
+- ACR: CI/CD 및 보안성 강화
+- PostgreSQL: 기본 보안 제공, enum, IP 허용 설정 용이
+- 멱등성: AI 호출 관리(생성 시간/횟수/상태)
+- 동기/비동기 플로우 분리, 상태 확인 노티 기반
+- 역할 구분(TEACHER / STUDENT) 을 통한 워크 플로우
+- 학년·과목 기반 랭 그래프 구조
+
+## 모니터링
+- Azure App Insights + Log Analytics
+- 알람: 웹 훅 기반 슬롯 고갈, 에러율 임계치 (미 구현)
 ## 아키텍처  
 - **User & Class Service**: 사용자/수업/등록/출결 관리
 - **Assignment Service**: 과제 및 자료 관리
@@ -54,7 +87,7 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 | FR-D-003 | 점수 조회| 교사는 실시간 및 최종 점수 조회가능|
 | FR-E-001 | 결과 조회 | 교사/학생 결과 조회 가능 |
 
-## 🚀 기술 스택
+## 기술 스택
 - **Backend**: Java Spring Boot 3, Gradle, JPA
 - **AI**: LangChain 
 - **Infra**: Azure App Service, PostgreSQL, Storage, Key Vault, Vercel , Azure Container Registry (ACR), Azure API Management
@@ -75,7 +108,11 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 - 성능 로그
 - 최종 문서/영상   
 - 기능 시연 및 발표 
+## 트러블슈팅 사례
 
+- DB 커넥션 풀 고갈: prod/dev 혼재 → 서비스 분리로 해결
+- JSONB 직렬화 문제: List 저장 추출 문제 → String 저장 후 정규식 분리
+  
 ## 제출물
 - 기능 명세서
 - API 명세 (OpenAPI/Swagger)
@@ -114,7 +151,7 @@ java -jar build/libs/*.jar
 # 기본 실행 포트
 http://localhost:8080
 
-# Swagger UI (API 확인)
+# Swagger UI (API 확인 일부 미구현)
 http://localhost:8080/swagger-ui.html
 ```
 
