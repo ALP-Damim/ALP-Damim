@@ -42,34 +42,39 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 ## 요구사항 (기능 명세 요약) 
 | ID | 구분 | 설명 |
 | --- | --- | --- |
-| FR-A-001 | 인증 | 이메일/비밀번호 로그인 → JWT 발급 |
+| FR-A-001 | 인증 | 이메일/비밀번호 로그인 → JWT 발급 (미구현) |
 | FR-B-001 | 수업 | 교사는 수업 생성/학생 등록 가능 |
-| FR-C-001 | 과제 | 교사는 과제/퀴즈 생성 가능 |
+| FR-B-002 | 수업 | 교사는 수업 시작전 알림 가능 |
+| FR-C-001 | 과제 | 교사는 과제/퀴즈 수정 삭제 생성 조회 가능 |
+| FR-C-002 | 과제 | 교사는 과제 여부 알림 가능 |
 | FR-D-001 | 제출 | 학생은 답안 제출 가능 |
 | FR-D-002 | AI 피드백 | 제출 시 AI 피드백 생성·저장 |
-| FR-D-003 | 점수 확정 | 교사는 최종 점수 확정 |
+| FR-D-003 | 점수 조회| 교사는 실시간 및 최종 점수 조회가능|
 | FR-E-001 | 결과 조회 | 교사/학생 결과 조회 가능 |
 
 ## 🚀 기술 스택
 - **Backend**: Java Spring Boot 3, Gradle, JPA
 - **AI**: LangChain 
-- **Infra**: Azure App Service/Container Apps, PostgreSQL, Storage, Key Vault, Vercel  
-- **Test**: Testcontainers(Postgres) 
-
+- **Infra**: Azure App Service, PostgreSQL, Storage, Key Vault, Vercel , Azure Container Respository, Azure Container Registry (ACR)
+- **Test**: HTTP Test 
+- **Networking**: Azure VNet
 ## 비기능 요구사항 
-- **성능**: API p50 < 500ms, p95 < 1.5s (LLM 포함)
-- **가용성**: 데모 시간대 99% 이상
+- **트래픽 관리**: LLM 요청 과도화 억제(상태, 횟수,시간 데이터 기반)
 - **보안**: HTTPS 전 구간, Key Vault로 비밀 관리
-- **로깅**: 요청 ID 추적, AI 응답시간 기록
+- **로깅**: Azure log, 주의 사항 slack webhook(미구현)
 
-## 🗓️ 일정 (5일 / 3인)
-1. Day 1: 요구사항/스키마/API 초안, 리포지토리 세팅  
-2. Day 2: User & Class, Assignment CRUD 구현  
-3. Day 3: Submission + AI(RAG)  
-4. Day 4: 화면 연동, 테스트, 성능 로그, 최종 문서/영상   
-5. Day 5: 기능 시연 및 발표 
+## 일정 (5일 / 3인)
+- 요구사항/스키마/API 초안
+- 리포지토리 세팅  
+- User & Class, Assignment CRUD 구현  
+- Submission + AI(RAG)  
+- 화면 연동
+- 테스트 ◀️ 현단계
+- 성능 로그
+- 최종 문서/영상   
+- 기능 시연 및 발표 
 
-## 📝 제출물
+## 제출물
 - 기능 명세서
 - API 명세 (OpenAPI/Swagger)
 - 시연 영상 (1 cycle: 60~90초)
@@ -77,8 +82,23 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 - 최종 기획서
 
 ---
+## .env
+```
+# Database (Azure PostgreSQL)
+DB_HOST=<your-azure-db-host>
+DB_PORT=5432
+DB_NAME=<your-db-name>
+DB_USER=<your-db-username>
+DB_PASSWORD=<your-db-password>
 
-## ⚡ 실행 방법
+# Azure AI Service (ex: OpenAI on Azure)
+AI_ENDPOINT=<your-azure-ai-endpoint>
+AI_KEY=<your-azure-ai-key>
+
+```
+---
+
+## 실행 방법
 
 ### Backend (Spring Boot)
 ```bash
