@@ -29,6 +29,8 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
   - Azure Storage (자료 업로드/첨부)
   - Azure Key Vault (비밀 관리)
   - Azure App Service / Container Apps (배포)
+  - Azure Container Registry (ACR) (CD)
+  - Azure API Management
 
 ## 데이터 모델 (엔터티) 
 - `users`  
@@ -55,7 +57,7 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 ## 🚀 기술 스택
 - **Backend**: Java Spring Boot 3, Gradle, JPA
 - **AI**: LangChain 
-- **Infra**: Azure App Service, PostgreSQL, Storage, Key Vault, Vercel , Azure Container Respository, Azure Container Registry (ACR)
+- **Infra**: Azure App Service, PostgreSQL, Storage, Key Vault, Vercel , Azure Container Registry (ACR), Azure API Management
 - **Test**: HTTP Test 
 - **Networking**: Azure VNet
 ## 비기능 요구사항 
