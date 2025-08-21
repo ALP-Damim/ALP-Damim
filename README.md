@@ -86,7 +86,7 @@ React 프론트는 Vercel 분리 배포(auto rebuild 강점)
 | FR-D-002 | AI 피드백 | 제출 시 AI 피드백 생성·저장 |
 | FR-D-003 | 점수 조회| 교사는 실시간 및 최종 점수 조회가능|
 | FR-E-001 | 결과 조회 | 교사/학생 결과 조회 가능 |
-
+## [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
 ## 기술 스택
 - **Backend**: Java Spring Boot 3, Gradle, JPA
 - **AI**: LangChain 
