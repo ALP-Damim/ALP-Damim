@@ -50,7 +50,7 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 - 상태 확인 노티 기반 처리
 - 역할 구분(TEACHER / STUDENT) 을 통한 워크 플로우
 - 학년·과목 기반 랭 그래프 구조
-- websocket을 통한 실시간성 보장 Mini AI Class Assistant
+- websocket을 통한 실시간성 보장
 
 ## 모니터링
 - Azure App Insights + Log Analytics
