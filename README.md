@@ -13,7 +13,7 @@ Backend: 안동현 (Submission & Grading, Assignment, front wireframe, infra)
 AI: 박지민 (LangChain RAG, Feedback, Assignment)
 
 - **데모 링크**
-- 프로덕트 URL: [damim_front: 연결 미완](https://frontend-react-p5b9108tq-tal6314-9800s-projects.vercel.app/)
+- 프로덕트 URL: [damim_front](https://damim.azurewebsites.net/)
 - 서비스 배포 BASE URL: https://team02-apim.azure-api.net/
 - [API 명세](https://amazing-guppy-6de.notion.site/API-256220df425d8089a080e646469317ce)
 - 릴리즈 버전/날짜: ver.250822
