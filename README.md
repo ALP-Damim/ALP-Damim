@@ -13,8 +13,8 @@ Backend: 안동현 (Submission & Grading, Assignment, infra)
 AI: 박지민 (LangChain RAG, Feedback, Assignment)
 
 - **데모 링크**
-- 프로덕트 URL:
-- 서비스 배포 URL:
+- 프로덕트 URL: [damim_front: 연결 미완](https://frontend-react-p5b9108tq-tal6314-9800s-projects.vercel.app/)
+- 서비스 배포 BASE URL: https://team02-apim.azure-api.net/
 - 릴리즈 버전/날짜: ver.250822
 
 
@@ -22,7 +22,7 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 ## 프로젝트 소개 
 교사와 학생을 대상으로 한 경량 학습 관리 및 AI 보조 시스템입니다.  
 교사는 과제/퀴즈를 등록하고, 학생은 답안을 제출하면 AI가 RAG기반 피드백을 제공합니다.  
-교사는 결과 및 통계를 확인하고 최종 점수를 확정할 수 있습니다.
+교사는 결과 및 통계를 확인하고 실시간/최종 점수를 확정할 수 있습니다.
 
 ## 주요 기능 
 - **교사**
@@ -36,7 +36,7 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 - **AI 서비스**
   - LangChain RAG 기반 근거 검색
 ## 배포 환경
-React 프론트는 Vercel 분리 배포(auto rebuild 강점)
+React 프론트는 Vercel 분리 배포
 백엔드: Azure App Service + ACR + APIM
 이미지 태깅: latest + commit-SHA 병행 (롤백/추적성 확보)
 
@@ -48,6 +48,57 @@ React 프론트는 Vercel 분리 배포(auto rebuild 강점)
 - 동기/비동기 플로우 분리, 상태 확인 노티 기반
 - 역할 구분(TEACHER / STUDENT) 을 통한 워크 플로우
 - 학년·과목 기반 랭 그래프 구조
+- websocket을 통한 실시간성 보장 Mini AI Class Assistant
+
+AI 기반 학습 보조 플랫폼 (데모 프로젝트)
+
+## 팀명: Team DAMIM
+
+- **인원/역할**
+
+Backend: 양예준 (User & Class, front, infra)
+
+Backend: 안동현 (Submission & Grading, Assignment, infra)
+
+AI: 박지민 (LangChain RAG, Feedback, Assignment)
+
+- **데모 링크**
+- 프로덕트 URL: [damim_front: 연결 미완](https://frontend-react-p5b9108tq-tal6314-9800s-projects.vercel.app/)
+- 서비스 배포 BASE URL: https://team02-apim.azure-api.net/
+- 릴리즈 버전/날짜: ver.250822
+
+
+### 
+## 프로젝트 소개 
+교사와 학생을 대상으로 한 경량 학습 관리 및 AI 보조 시스템입니다.  
+교사는 과제/퀴즈를 등록하고, 학생은 답안을 제출하면 AI가 RAG기반 피드백을 제공합니다.  
+교사는 결과 및 통계를 확인하고 실시간/최종 점수를 확정할 수 있습니다.
+
+## 주요 기능 
+- **교사**
+  - 수업/과제/퀴즈 CRUD
+  - 학생 출결 체크
+  - 제출 답안 피드백/통계 조회
+  - 최종 점수 확정
+- **학생**
+  - 과제/퀴즈 답안 제출
+  - AI 기반 피드백 및 점수 조회
+- **AI 서비스**
+  - LangChain RAG 기반 근거 검색
+## 배포 환경
+React 프론트는 Vercel 분리 배포
+백엔드: Azure App Service + ACR + APIM
+이미지 태깅: latest + commit-SHA 병행 (롤백/추적성 확보)
+
+## 프로젝트 특장점
+- APIM: 프록시·CORS 해결
+- ACR: CI/CD 및 보안성 강화
+- PostgreSQL: 기본 보안 제공, enum, IP 허용 설정 용이
+- 멱등성: AI 호출 관리(생성 시간/횟수/상태)
+- 동기/비동기 플로우 분리, 상태 확인 노티 기반
+- 역할 구분(TEACHER / STUDENT) 을 통한 워크 플로우
+- 학년·과목 기반 랭 그래프 구조
+- websocket을 통한 실시간성 보장
 
 ## 모니터링
 - Azure App Insights + Log Analytics
@@ -86,13 +137,13 @@ React 프론트는 Vercel 분리 배포(auto rebuild 강점)
 | FR-D-002 | AI 피드백 | 제출 시 AI 피드백 생성·저장 |
 | FR-D-003 | 점수 조회| 교사는 실시간 및 최종 점수 조회가능|
 | FR-E-001 | 결과 조회 | 교사/학생 결과 조회 가능 |
-## [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
 ## 기술 스택
 - **Backend**: Java Spring Boot 3, Gradle, JPA
 - **AI**: LangChain 
 - **Infra**: Azure App Service, PostgreSQL, Storage, Key Vault, Vercel , Azure Container Registry (ACR), Azure API Management
 - **Test**: HTTP Test 
 - **Networking**: Azure VNet
+- **websocket** : STOMP
 ## 비기능 요구사항 
 - **트래픽 관리**: LLM 요청 과도화 억제(상태, 횟수,시간 데이터 기반)
 - **보안**: HTTPS 전 구간, Key Vault로 비밀 관리
@@ -110,7 +161,7 @@ React 프론트는 Vercel 분리 배포(auto rebuild 강점)
 - 기능 시연 및 발표 
 ## 트러블슈팅 사례
 
-- DB 커넥션 풀 고갈: prod/dev 혼재 → 서비스 분리로 해결
+- DB 커넥션 풀 고갈: prod/dev 연결 혼재 → 서비스 분리로 해결
 - JSONB 직렬화 문제: List 저장 추출 문제 → String 저장 후 정규식 분리
   
 ## 제출물
@@ -135,6 +186,11 @@ AI_ENDPOINT=<your-azure-ai-endpoint>
 AI_KEY=<your-azure-ai-key>
 
 ```
+## 기타 사항 
+[기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
+[다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
+[ERD](https://www.erdcloud.com/d/HQdooovEgB6a6uhGX)
+[프로젝트를 마치며](https://amazing-guppy-6de.notion.site/257220df425d80d58383d82507c6269a)
 ---
 
 ## 실행 방법
