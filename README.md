@@ -178,7 +178,7 @@ Output Directory: dist/
 배포 완료 후 제공된 URL에서 접근 가능
 
 ### 시연 영상
-[강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
-[학색](https://www.youtube.com/watch?v=UqXqOcrLRWI)
-[통합 영상](https://youtu.be/wNdYUXmMeRo)
+- [강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
+- [학생](https://www.youtube.com/watch?v=UqXqOcrLRWI)
+- [통합 영상](https://youtu.be/wNdYUXmMeRo)
 
