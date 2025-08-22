@@ -38,9 +38,9 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 - **AI 서비스**
   - LangChain RAG 기반 근거 검색
 ## 배포 환경
-React 프론트는 Vercel 분리 배포
-백엔드: Azure App Service + ACR + APIM
-이미지 태깅: latest + commit-SHA 병행 (롤백/추적성 확보)
+- React 프론트는 Vercel 분리 배포
+- 백엔드: Azure App Service + ACR + APIM
+- 이미지 태깅: latest + commit-SHA 병행 (롤백/추적성 확보)
 
 ## 프로젝트 특장점
 - APIM: 프록시·CORS 해결
@@ -68,7 +68,8 @@ React 프론트는 Vercel 분리 배포
   - Azure App Service / Container Apps (배포)
   - Azure Container Registry (ACR) (CD)
   - Azure API Management
-
+## 시스템 흐름
+[미로보드](https://miro.com/app/board/uXjVJTdm0i4=/)
 ## 데이터 모델 (엔터티) 
 - `users`  
 - `classes`  
@@ -172,12 +173,12 @@ http://localhost:5173
 ```
 
 ### Vercel 배포
-GitHub 리포지토리와 연동  
-Vercel에서 프로젝트 Import  
-Framework 선택: Vite  
-Build Command: npm run build  
-Output Directory: dist/  
-배포 완료 후 제공된 URL에서 접근 가능
+- GitHub 리포지토리와 연동  
+- Vercel에서 프로젝트 Import  
+- Framework 선택: Vite  
+- Build Command: npm run build  
+- Output Directory: dist/  
+- 배포 완료 후 제공된 URL에서 접근 가능
 
 ### 시연 영상
 - [강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
