@@ -183,5 +183,5 @@ http://localhost:5173
 ### 시연 영상
 - [강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
 - [학생](https://www.youtube.com/watch?v=UqXqOcrLRWI)
-- [통합 영상](https://youtu.be/wNdYUXmMeRo)
+- [통합 영상](https://youtu.be/BYIfDLo95xk)
 
