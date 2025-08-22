@@ -109,8 +109,8 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 - User & Class, Assignment CRUD 구현  
 - Submission + AI(RAG)  
 - 화면 연동
-- 테스트 ◀️ 현단계
-- 성능 로그
+- 테스트 
+- 성능 로그 ◀️ 현단계
 - 최종 문서/영상   
 - 기능 시연 및 발표 
   
