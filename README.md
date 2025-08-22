@@ -118,6 +118,11 @@ React 프론트는 Vercel 분리 배포
 - 코드
 - 최종 기획서
 
+## 기타 사항 
+- [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
+- [다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
+- [ERD](https://amazing-guppy-6de.notion.site/ERDiagram-png-257220df425d80d7a072eddf64de82f3)
+- [프로젝트를 마치며](https://amazing-guppy-6de.notion.site/257220df425d80d58383d82507c6269a)
 ---
 ## .env
 ```
@@ -133,11 +138,6 @@ AI_ENDPOINT=<your-azure-ai-endpoint>
 AI_KEY=<your-azure-ai-key>
 
 ```
-## 기타 사항 
-- [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
-- [다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
-- [ERD](https://www.erdcloud.com/d/HQdooovEgB6a6uhGX)
-- [프로젝트를 마치며](https://amazing-guppy-6de.notion.site/257220df425d80d58383d82507c6269a)
 ---
 
 ## 실행 방법
