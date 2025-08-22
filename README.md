@@ -6,9 +6,9 @@ AI 기반 학습 보조 플랫폼 (데모 프로젝트)
 
 - **인원/역할**
 
-Backend: 양예준 (User & Class, front, infra)
+Backend: 양예준 (User & Class, front & back communication , infra)
 
-Backend: 안동현 (Submission & Grading, Assignment, infra)
+Backend: 안동현 (Submission & Grading, Assignment, front wireframe, infra)
 
 AI: 박지민 (LangChain RAG, Feedback, Assignment)
 
@@ -56,8 +56,8 @@ React 프론트는 Vercel 분리 배포
   
 ## 아키텍처  
 - **User & Class Service**: 사용자/수업/등록/출결 관리
-- **Assignment Service**: 과제 및 자료 관리
-- **Submission & Grading Service**: 제출/점수 저장
+- **TEST Service**: 과제 및 자료 관리
+- **Exam mangement & result Service**: 제출/점수 저장
 - **AI Service**: LangChain RAG 
 - **공통 인프라**: 
   - Azure PostgreSQL (DB)
@@ -70,8 +70,8 @@ React 프론트는 Vercel 분리 배포
 ## 데이터 모델 (엔터티) 
 - `users`  
 - `classes`  
-- `enrollments`  
-- `assignments`  
+- `exams`
+- `questions`  
 - `submissions`  
 - `feedbacks` (AI 피드백·근거)  
 - `materials` (수업 자료 메타)
