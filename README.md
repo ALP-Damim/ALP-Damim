@@ -117,7 +117,6 @@ React 프론트는 Vercel 분리 배포
 - 시연 영상 (1 cycle: 60~90초)
 - 코드
 - 최종 기획서
-
 ## 기타 사항 
 - [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
 - [다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
@@ -177,3 +176,9 @@ Framework 선택: Vite
 Build Command: npm run build  
 Output Directory: dist/  
 배포 완료 후 제공된 URL에서 접근 가능
+
+### 시연 영상
+[강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
+[학색](https://www.youtube.com/watch?v=UqXqOcrLRWI)
+[통합 영상](https://youtu.be/wNdYUXmMeRo)
+
