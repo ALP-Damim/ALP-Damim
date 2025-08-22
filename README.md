@@ -184,4 +184,5 @@ http://localhost:5173
 - [강사](https://www.youtube.com/watch?v=ewF5IGd0Eno)
 - [학생](https://www.youtube.com/watch?v=UqXqOcrLRWI)
 - [통합 영상](https://youtu.be/BYIfDLo95xk)
+- [A.I 파트](https://youtu.be/8PW4CGZQcS0)
 
