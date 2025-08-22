@@ -185,4 +185,4 @@ http://localhost:5173
 - [학생](https://www.youtube.com/watch?v=UqXqOcrLRWI)
 - [통합 영상](https://youtu.be/BYIfDLo95xk)
 - [A.I 파트](https://youtu.be/8PW4CGZQcS0)
-
+- [A.I 실행 영상](https://youtu.be/u-loK3_XdAM)
