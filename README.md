@@ -159,10 +159,6 @@ React 프론트는 Vercel 분리 배포
 - 성능 로그
 - 최종 문서/영상   
 - 기능 시연 및 발표 
-## 트러블슈팅 사례
-
-- DB 커넥션 풀 고갈: prod/dev 연결 혼재 → 서비스 분리로 해결
-- JSONB 직렬화 문제: List 저장 추출 문제 → String 저장 후 정규식 분리
   
 ## 제출물
 - 기능 명세서
@@ -187,10 +183,10 @@ AI_KEY=<your-azure-ai-key>
 
 ```
 ## 기타 사항 
-[기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
-[다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
-[ERD](https://www.erdcloud.com/d/HQdooovEgB6a6uhGX)
-[프로젝트를 마치며](https://amazing-guppy-6de.notion.site/257220df425d80d58383d82507c6269a)
+- [기본 규칙](https://amazing-guppy-6de.notion.site/256220df425d8009a8dbc8a1cbe544e4)
+- [다이어 그램](https://amazing-guppy-6de.notion.site/s-256220df425d80a6acaeef5a02b5fe71)
+- [ERD](https://www.erdcloud.com/d/HQdooovEgB6a6uhGX)
+- [프로젝트를 마치며](https://amazing-guppy-6de.notion.site/257220df425d80d58383d82507c6269a)
 ---
 
 ## 실행 방법
