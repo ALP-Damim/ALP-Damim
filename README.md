@@ -47,7 +47,7 @@ AI: 박지민 (LangChain RAG, Feedback, Assignment)
 - ACR: CI/CD 및 보안성 강화
 - PostgreSQL: 기본 보안 제공, enum, IP 허용 설정 용이
 - 멱등성: AI 호출 관리(생성 시간/횟수/상태)
-- 동기/비동기 플로우 분리, 상태 확인 노티 기반
+- 상태 확인 노티 기반 처리
 - 역할 구분(TEACHER / STUDENT) 을 통한 워크 플로우
 - 학년·과목 기반 랭 그래프 구조
 - websocket을 통한 실시간성 보장 Mini AI Class Assistant
